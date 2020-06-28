@@ -750,7 +750,13 @@ h3 {
   box-sizing: border-box;
   border-radius: 4px;
 }
-
+.list-t:focus {
+  color: #2196f3;
+  fill: #2196f3;
+  border: 1px solid #2196f3;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
 .list-l {
   width: 170px;
   height: 90px;
@@ -768,6 +774,10 @@ h3 {
 }
 .list:focus a {
   color: #2196f3;
+  fill: #2196f3;
+  border: 1px solid #2196f3;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 .footer {
   display: flex;
