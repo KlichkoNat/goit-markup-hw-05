@@ -746,6 +746,9 @@ h3 {
 .list-title:hover a {
   color: #2196f3;
   fill: #2196f3;
+  border: 1px solid #2196f3;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 .list-title:focus {
   color: #2196f3;
