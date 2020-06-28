@@ -743,6 +743,10 @@ h3 {
   box-sizing: border-box;
   border-radius: 4px;
 }
+.list-title:hover a {
+  color: #2196f3;
+  fill: #2196f3;
+}
 .list-title:focus {
   color: #2196f3;
   fill: #2196f3;
@@ -769,15 +773,10 @@ h3 {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.list:hover a {
-  color: #2196f3;
-}
+
 .list:focus a {
   color: #2196f3;
   fill: #2196f3;
-  border: 1px solid #2196f3;
-  box-sizing: border-box;
-  border-radius: 4px;
 }
 .footer {
   display: flex;
