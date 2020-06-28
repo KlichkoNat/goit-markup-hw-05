@@ -550,7 +550,7 @@ h3 {
   letter-spacing: 0.06em;
 }
 .subject-title {
-  display: block;
+  display: inline-block;
 
   padding-bottom: 20px;
 }
@@ -599,7 +599,7 @@ h3 {
   transform: translateY(0%);
 }
 .subtitle {
-  width: 322px;
+  max-width: inherit;
   padding-left: 24px;
   padding-right: 24px;
   margin-top: 0;
@@ -627,6 +627,7 @@ h3 {
   display: inline-block;
   width: 44px;
   height: 44px;
+  fill: var(--svg-color);
   border-radius: 50%;
   background-size: 20px;
   padding: 12px 12px;
@@ -717,16 +718,17 @@ h3 {
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
+  cursor: pointer;
+  transition-property: border, var(--color3);
+  transition-duration: 250ms, 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1),
+    cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list-title:last-child {
   margin-right: 0;
 }
 .list-t {
   display: flex;
-  transition-property: var(--color3), background-color;
-  transition-duration: 250ms, 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1),
-    cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list-t:hover svg {
   --color3: #2196f3;
@@ -734,9 +736,7 @@ h3 {
 .list-t:focus svg {
   --color3: #2196f3;
 }
-.list-t:hover {
-  color: #2196f3;
-}
+
 .list-title:hover {
   border: 1px solid #2196f3;
   box-sizing: border-box;
@@ -750,6 +750,9 @@ h3 {
 .list-l {
   width: 170px;
   height: 90px;
+}
+.list-title svg {
+  --color3: #afb1b8;
 }
 .list a {
   display: block;
