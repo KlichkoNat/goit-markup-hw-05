@@ -537,8 +537,13 @@ h3 {
 .meta:last-child {
   margin-right: 0;
 }
+.fff {
+  display: inline-block;
+}
 
 .subject {
+  height: 36px;
+  margin-top: 20px;
   padding-left: 24px;
   padding-right: 24px;
   margin-bottom: 4px;
@@ -549,9 +554,9 @@ h3 {
   line-height: 36px;
   letter-spacing: 0.06em;
 }
+
 .subject-title {
   display: inline-block;
-
   padding-bottom: 20px;
 }
 .subject-text {
@@ -593,13 +598,15 @@ h3 {
   overflow: hidden;
   position: relative;
   width: 370px;
-  height: 294px;
 }
 .subject-title:hover .overlay {
   transform: translateY(0%);
 }
+.subject-title:focus .overlay {
+  transform: translateY(0%);
+}
 .subtitle {
-  max-width: inherit;
+  height: 30px;
   padding-left: 24px;
   padding-right: 24px;
   margin-top: 0;
